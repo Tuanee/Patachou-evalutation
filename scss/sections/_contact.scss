@@ -1,0 +1,63 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.contact {
+    @include flex-center;
+    height: 700px;
+    justify-content: space-evenly;
+
+    &__title {
+        @include fonttitle;
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-align: center;
+
+    }
+
+    &__description {
+        width: 90vw;
+
+    }
+
+    &__form {
+        @include column;
+        gap: 20px;
+    }
+
+    &__names {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__labelbottom {
+        font-size: 0.8rem;
+    }
+
+    &__labelhidden {
+        opacity: 0;
+    }
+
+    &__input {
+        padding: 5px;
+    }
+
+    &__content {
+        @include column;
+    }
+
+    &__contenttext {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5px;
+    }
+
+    &__inputtext {
+        padding: 30px;
+    }
+
+    &__button {
+        align-self: center;
+        @include button;
+        width: 80vw;
+    }
+}

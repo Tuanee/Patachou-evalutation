@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero {
+    z-index: 1;
+    height: 350px;
+    background-image: url(/images/haute-couture-2.jpg);
+    background-size: 280%;
+    background-position: 50%;
+    display: flex;
+    justify-content: space-around;
+
+
+
+
+    &__title {
+        @include flex-center;
+        @include fonttitle;
+        margin-top: 100px;
+        font-size: 2rem;
+        height: 45%;
+        width: 80%;
+        background-color: $white;
+        opacity: 0.9;
+
+    }
+
+}

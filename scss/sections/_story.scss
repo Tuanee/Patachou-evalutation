@@ -1,3 +1,47 @@
-.story__svg {
-    height: 50px;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.story {
+    @include flex-center;
+    justify-content: space-evenly;
+    height: 1000px;
+    margin-bottom: -20px;
+
+
+    &__citation {
+        @include flex-center;
+        @include fonttitle;
+        font-size: 1.5rem;
+        ;
+        text-align: center;
+
+    }
+
+    &__svg {
+        height: 80px;
+    }
+
+    &__image {
+        height: 200px;
+    }
+
+    &__description {
+        width: 90vw;
+    }
+
+    &__content {
+        position: relative;
+        height: 150px;
+        width: 90vw;
+        border-bottom: $black solid 1px;
+    }
+
+    &__button {
+        @include button;
+        position: absolute;
+        top: -20%;
+        margin-top: 5%;
+
+    }
+
 }

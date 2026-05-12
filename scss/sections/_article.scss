@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.article {
+    @include flex-center;
+    text-align: center;
+    background-color: $beige;
+    color: $white;
+    justify-content: space-evenly;
+    height: 2000px;
+
+    &__image {
+
+        height: 250px;
+
+    }
+
+    &__description {
+        padding: 0 20px
+    }
+
+
+    & h2 {
+        @include fonttitle;
+    }
+
+    & h3 {
+        @include fonttitle;
+    }
+
+    &__link {
+        border: solid $white 1px;
+        padding: 15px;
+    }
+
+
+
+}

@@ -14,10 +14,23 @@
 }
 
 @mixin fonttitle {
-    .kaisei-decol-regular {
+    
         font-family: "Kaisei Decol", serif;
         font-weight: 400;
         font-style: normal;
-    }
+    
 
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin button {
+    
+    padding: 15px;
+        border: none;
+        background-color: $beige;
+        color: $white;
 }

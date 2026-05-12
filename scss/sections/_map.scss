@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.map {
+    height: 500px;
+    color: $white;
+    @include flex-center;
+    text-align: center;
+    background-color: $beige;
+    justify-content: space-between;
+    padding-top: 30px;
+
+
+    &__title {
+        @include fonttitle;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    &__adress {
+        font-size: 1rem;
+        
+    }
+
+    &__iframe {
+        width: 100%;
+    }
+
+}

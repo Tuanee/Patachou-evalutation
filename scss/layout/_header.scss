@@ -1,10 +1,16 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
 
+
 .header {
+    position: relative;
+    z-index: 2;
     @include flex-center;
     text-align: center;
     font-weight: 600;
+    padding-bottom: 20px;
+    box-shadow: 0px 0.5px 10px rgb(32, 32, 32);
+
 
     &__logo {
         margin: 3%;
@@ -16,11 +22,11 @@
         flex-direction: column;
         gap: 9px;
         list-style: none;
-        
+
     }
+
     &__elements span {
         color: $beige;
-    
+
     }
 }
-

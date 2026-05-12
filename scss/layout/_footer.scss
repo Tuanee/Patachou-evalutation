@@ -1,4 +1,53 @@
-.footer__svg {
-    height: 30px;
-   
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+
+
+    &__top {
+        align-items: center;
+        @include column;
+        padding-top: 10%;
+        height: 80vh;
+        background-color: $black;
+        color: $white;
+        gap: 15px;
+    }
+
+    &__logo {
+        height: 80px;
+    }
+
+    &__svg {
+
+        height: 50px;
+        fill: $white;
+
+
+    }
+
+    &__svgcontent {
+        display: flex;
+    }
+
+
+    &__list {
+        list-style: none;
+
+    }
+
+    &__list span {
+        color: $beige;
+    }
+
+    &__bottom {
+        gap: 7%;
+        height: 10vh;
+        font-size: 0.7rem;
+        @include flex-center;
+        background-color: $black;
+        border: solid 2px $beige;
+        color: $white;
+    }
+
 }

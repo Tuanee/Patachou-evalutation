@@ -10,13 +10,21 @@ body {
   font-style: normal;
 }
 
+p {
+  font-weight: 300;
+}
+
 .header {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: 600;
+  padding-bottom: 20px;
+  box-shadow: 0px 0.5px 10px rgb(32, 32, 32);
 }
 .header__logo {
   margin: 3%;
@@ -31,12 +39,254 @@ body {
   color: #AB864C;
 }
 
+.footer__top {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  height: 80vh;
+  background-color: #000000;
+  color: #ffffff;
+  gap: 15px;
+}
+.footer__logo {
+  height: 80px;
+}
 .footer__svg {
-  height: 30px;
+  height: 50px;
+  fill: #ffffff;
+}
+.footer__svgcontent {
+  display: flex;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__list span {
+  color: #AB864C;
+}
+.footer__bottom {
+  gap: 7%;
+  height: 10vh;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border: solid 2px #AB864C;
+  color: #ffffff;
 }
 
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1000px;
+  margin-bottom: -20px;
+}
+.story__citation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: center;
+}
 .story__svg {
-  height: 50px;
+  height: 80px;
+}
+.story__image {
+  height: 200px;
+}
+.story__description {
+  width: 90vw;
+}
+.story__content {
+  position: relative;
+  height: 150px;
+  width: 90vw;
+  border-bottom: #000000 solid 1px;
+}
+.story__button {
+  padding: 15px;
+  border: none;
+  background-color: #AB864C;
+  color: #ffffff;
+  position: absolute;
+  top: -20%;
+  margin-top: 5%;
+}
+
+.hero {
+  z-index: 1;
+  height: 350px;
+  background-image: url(/images/haute-couture-2.jpg);
+  background-size: 280%;
+  background-position: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 100px;
+  font-size: 2rem;
+  height: 45%;
+  width: 80%;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.map {
+  height: 500px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #AB864C;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.map__title {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.map__adress {
+  font-size: 1rem;
+}
+.map__iframe {
+  width: 100%;
+}
+
+.citation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  height: 300px;
+}
+.citation__name {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.description {
+  text-align: center;
+  border: solid black 2px;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #AB864C;
+  color: #ffffff;
+  justify-content: space-evenly;
+  height: 2000px;
+}
+.article__image {
+  height: 250px;
+}
+.article__description {
+  padding: 0 20px;
+}
+.article h2 {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.article h3 {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.article__link {
+  border: solid #ffffff 1px;
+  padding: 15px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  justify-content: space-evenly;
+}
+.contact__title {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+.contact__description {
+  width: 90vw;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact__names {
+  display: flex;
+  gap: 5px;
+}
+.contact__labelbottom {
+  font-size: 0.8rem;
+}
+.contact__labelhidden {
+  opacity: 0;
+}
+.contact__input {
+  padding: 5px;
+}
+.contact__content {
+  display: flex;
+  flex-direction: column;
+}
+.contact__contenttext {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+.contact__inputtext {
+  padding: 30px;
+}
+.contact__button {
+  align-self: center;
+  padding: 15px;
+  border: none;
+  background-color: #AB864C;
+  color: #ffffff;
+  width: 80vw;
 }
 
 /*# sourceMappingURL=main.css.map */
