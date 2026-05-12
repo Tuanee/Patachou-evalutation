@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+
+@mixin button {
+    color: $beige;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fonttitle {
+    .kaisei-decol-regular {
+        font-family: "Kaisei Decol", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+}

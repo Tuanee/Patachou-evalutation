@@ -1,0 +1,26 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.header {
+    @include flex-center;
+    text-align: center;
+    font-weight: 600;
+
+    &__logo {
+        margin: 3%;
+    }
+
+    &__list {
+        // j'ai mis un display pour pouvoir mettre un gap
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        list-style: none;
+        
+    }
+    &__elements span {
+        color: $beige;
+    
+    }
+}
+
