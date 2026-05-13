@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as *;
+
+.storycontact {
+    @include flex-center;
+
+}

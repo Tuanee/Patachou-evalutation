@@ -15,8 +15,19 @@
         flex-direction: row;
         justify-content: space-evenly;
 
+        @media (min-width: 1280px) {
+            height: 10vh;
+            padding-bottom: 0px;
+            gap: 500px;
+        }
+
         &__logo {
             margin: 3%;
+
+            @media (min-width: 1280px) {
+                height: 80px;
+
+            }
         }
     }
 
@@ -30,6 +41,10 @@
         @media (min-width: 768px) {
             flex-direction: row;
 
+        }
+
+        @media (min-width: 1280px) {
+            gap: 50px;
         }
 
     }

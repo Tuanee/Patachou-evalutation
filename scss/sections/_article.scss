@@ -6,12 +6,43 @@
     text-align: center;
     background-color: $beige;
     color: $white;
-    justify-content: space-evenly;
-    height: 2000px;
+    gap: 2%;
+    height: 2100px;
+
+    @media (min-width: 1280px) {
+        height: 100vh;
+        gap: 5%;
+    }
+
+    &__content__all {
+        @include flex-center;
+        
+
+        @media (min-width: 1280px) {
+            @include flex-center;
+            align-items: start;
+            flex-direction: row;
+            gap: 5%;
+
+        }
+
+    }
+
+    &__content {
+        @include flex-center;
+        gap: 30px;
+        width: 90%;
+        @media (min-width: 1280px) {
+    
+        gap: 30px;
+        width: 20%;
+        }
+
+    }
 
     &__image {
 
-        height: 250px;
+        height: 50%;
 
     }
 
@@ -20,19 +51,20 @@
     }
 
 
-    & h2 {
+    & h2,
+    h3 {
         @include fonttitle;
-    }
 
-    & h3 {
-        @include fonttitle;
+        @media (min-width: 1280px) {
+            font-size: 2rem;
+        }
     }
 
     &__link {
+
         border: solid $white 1px;
         padding: 15px;
     }
-
 
 
 }

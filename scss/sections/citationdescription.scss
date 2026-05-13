@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.citationdescription {
+    @include flex-center;
+    justify-content: space-evenly;
+    gap: 50px;
+    height: 70%;
+
+
+    &__citation {
+        @include flex-center;
+        @include fonttitle;
+        gap: 20px;
+        font-size: 1rem;
+        text-align: center;
+        width: 80vw;
+        margin-top: 30px;
+
+
+        @media (min-width: 1280px) {
+        font-size: 1rem;
+        }
+
+
+        &__citationname {
+
+            @media (min-width: 1280px) {
+            
+            }
+
+        }
+    }
+
+
+    &__article__description {
+        text-align: center;
+        border: solid black 1px;
+        padding: 15px;
+        margin-bottom: 50px;
+        width: 80vw;
+
+        @media (min-width: 768px) {
+            width: 35vw;
+            margin: auto;
+            margin-bottom: 10%;
+            padding: 4%;
+
+        }
+
+    }
+}

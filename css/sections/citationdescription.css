@@ -1,0 +1,45 @@
+.citationdescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  height: 70%;
+}
+.citationdescription__citation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 20px;
+  font-size: 1rem;
+  text-align: center;
+  width: 80vw;
+  margin-top: 30px;
+}
+@media (min-width: 1280px) {
+  .citationdescription__citation {
+    font-size: 1rem;
+  }
+}
+.citationdescription__article__description {
+  text-align: center;
+  border: solid black 1px;
+  padding: 15px;
+  margin-bottom: 50px;
+  width: 80vw;
+}
+@media (min-width: 768px) {
+  .citationdescription__article__description {
+    width: 35vw;
+    margin: auto;
+    margin-bottom: 10%;
+    padding: 4%;
+  }
+}
+
+/*# sourceMappingURL=citationdescription.css.map */
