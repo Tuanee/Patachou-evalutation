@@ -88,6 +88,17 @@ p {
     padding-top: 0%;
   }
 }
+@media (min-width: 1280px) {
+  .footer__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 30vh;
+    justify-content: space-evenly;
+  }
+}
 .footer__logo {
   height: 80px;
 }

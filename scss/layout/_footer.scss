@@ -20,6 +20,14 @@
             font-size: 0.8rem;
             padding-top: 0%;
         }
+
+        @media (min-width: 1280px) {
+            @include flex-center;
+            flex-direction: row;
+            height: 30vh;
+            justify-content: space-evenly;
+        }
+
     }
 
     &__logo {
@@ -72,8 +80,9 @@
         gap: 20px;
 
     }
+
     &__svgall {
-         display: flex;
+        display: flex;
         flex-direction: column;
         gap: 20px;
     }
@@ -86,9 +95,10 @@
         background-color: $black;
         border: solid 2px $beige;
         color: $white;
+
         @media (min-width: 768px) {
             flex-direction: row;
-         }
+        }
     }
 
 }
