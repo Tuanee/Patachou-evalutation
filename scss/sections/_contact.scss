@@ -5,31 +5,55 @@
     @include flex-center;
     height: 700px;
     justify-content: space-evenly;
+    @media (min-width: 1280px) {
+        gap: 100px;
+        align-items: start;
+        margin-top: 150px;
+        height: 500px;
+    }
+
+    &__titredescription {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 90vw;
+        @media (min-width: 1280px) {
+         width: 30vw;
+         
+        }
+    }
+
+    @media (min-width: 1280px) {
+        display: flex;
+        flex-direction: row;
+    }
 
     &__title {
         @include fonttitle;
         font-size: 1.5rem;
         font-weight: 800;
         text-align: center;
-
-    }
-
-    &__description {
-        width: 90vw;
+        @media (min-width: 1280px) {
+            text-align: start;
+        }
 
     }
 
     &__form {
         @include column;
         gap: 20px;
+        @media (min-width: 1280px) {
+            width: 50vw;
+        }
     }
 
     &__names {
         display: flex;
         gap: 5px;
-         @media (min-width: 768px) {
+
+        @media (min-width: 768px) {
             width: 90vw;
-         }
+        }
     }
 
     &__labelbottom {
@@ -42,13 +66,18 @@
 
     &__input {
         padding: 5px;
+
         @media (min-width: 768px) {
             width: 45vw;
         }
+         @media (min-width: 1280px) {
+            width: 25vw;
+        }
     }
+
     &__inputemail {
         padding: 5px;
-     }
+    }
 
     &__content {
         @include column;
@@ -58,8 +87,9 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 5px;
+
         @media (min-width: 768px) {
-        justify-content: start;
+            justify-content: start;
         }
     }
 
@@ -71,5 +101,9 @@
         align-self: center;
         @include button;
         width: 80vw;
+
+         @media (min-width: 1280px) {
+            width: 50vw;
+        }
     }
 }

@@ -283,8 +283,18 @@ p {
   font-weight: 800;
   font-size: 2rem;
 }
+@media (min-width: 1280px) {
+  .map__title {
+    font-size: 3rem;
+  }
+}
 .map__adress {
   font-size: 1rem;
+}
+@media (min-width: 1280px) {
+  .map__adress {
+    font-size: 1.5rem;
+  }
 }
 .map__iframe {
   width: 100%;
@@ -413,6 +423,31 @@ p {
   height: 700px;
   justify-content: space-evenly;
 }
+@media (min-width: 1280px) {
+  .contact {
+    gap: 100px;
+    align-items: start;
+    margin-top: 150px;
+    height: 500px;
+  }
+}
+.contact__titredescription {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 90vw;
+}
+@media (min-width: 1280px) {
+  .contact__titredescription {
+    width: 30vw;
+  }
+}
+@media (min-width: 1280px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .contact__title {
   font-family: "Kaisei Decol", serif;
   font-weight: 400;
@@ -421,13 +456,20 @@ p {
   font-weight: 800;
   text-align: center;
 }
-.contact__description {
-  width: 90vw;
+@media (min-width: 1280px) {
+  .contact__title {
+    text-align: start;
+  }
 }
 .contact__form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (min-width: 1280px) {
+  .contact__form {
+    width: 50vw;
+  }
 }
 .contact__names {
   display: flex;
@@ -450,6 +492,11 @@ p {
 @media (min-width: 768px) {
   .contact__input {
     width: 45vw;
+  }
+}
+@media (min-width: 1280px) {
+  .contact__input {
+    width: 25vw;
   }
 }
 .contact__inputemail {
@@ -479,6 +526,11 @@ p {
   background-color: #AB864C;
   color: #ffffff;
   width: 80vw;
+}
+@media (min-width: 1280px) {
+  .contact__button {
+    width: 50vw;
+  }
 }
 
 .storycontact {
