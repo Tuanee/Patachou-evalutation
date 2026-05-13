@@ -27,6 +27,9 @@
     &__names {
         display: flex;
         gap: 5px;
+         @media (min-width: 768px) {
+            width: 90vw;
+         }
     }
 
     &__labelbottom {
@@ -39,7 +42,13 @@
 
     &__input {
         padding: 5px;
+        @media (min-width: 768px) {
+            width: 45vw;
+        }
     }
+    &__inputemail {
+        padding: 5px;
+     }
 
     &__content {
         @include column;
@@ -49,6 +58,9 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 5px;
+        @media (min-width: 768px) {
+        justify-content: start;
+        }
     }
 
     &__inputtext {
